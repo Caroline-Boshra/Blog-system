@@ -19,6 +19,7 @@
                             posted on : <?= $blog['created_at'] ?>
                            
                         </p> 
+                        <?php if(isset($_SESSION['user_id']) && $_SESSION['user_id'] === $blog['user_id']): ?>
                         <div style="display: flex; gap: 10px;">
                          <form action="index.php?page=destroy_blog&action=delete" method="POST" style="display: inline;">
                                 <input type="hidden" name="id" value="<?= $blog['id'] ?>">
@@ -30,6 +31,7 @@
                                 <button type="submit" class="btn btn-warning btn-sm"> Edit </button>
                             </form>
                         </div>
+                        <?php endif; ?>
                     </div>
                     <?php endforeach;?>
                     <!-- Divider-->

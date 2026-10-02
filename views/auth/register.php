@@ -13,7 +13,7 @@
                         <p>Registration Form</p>
                         <div class="my-5">
                            
-                            <form  action="index.php?page=sign-up" method="POST">
+                            <form  action="index.php?page=sign-up&action=register" method="POST">
                                 <div class="form-floating">
                                     <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..."  />
                                     <label for="name">Name</label>

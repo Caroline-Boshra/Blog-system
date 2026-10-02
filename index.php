@@ -18,16 +18,16 @@ switch($pages){
         require_once 'views/auth/register.php';
         break;
     case 'sign-up':
-        require_once 'controller/auth/RegisterController.php';
+        require_once 'controller/auth/AuthController.php';
         break;
     case 'login':
         require_once 'views/auth/login.php';
         break;
     case 'login-user':
-        require_once 'controller/auth/LoginController.php';
+        require_once 'controller/auth/AuthController.php';
         break;
     case 'logout':
-        require_once 'controller/auth/LogoutController.php';
+        require_once 'controller/auth/AuthController.php';
         break;
     case 'create_blog':
         require_once 'views/createBlog.php';

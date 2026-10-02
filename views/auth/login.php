@@ -13,7 +13,7 @@
                         <p>Login Form</p>
                         <div class="my-5">
                            
-                            <form  action="index.php?page=login-user" method="POST">
+                            <form  action="index.php?page=login-user&action=login" method="POST">
                                 <div class="form-floating">
                                     <input class="form-control" id="email" name="email" type="email" placeholder="Enter your email..." />
                                     <label for="email">Email address</label>
